@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GowJuice - Fresh & Healthy Juices</title>
+    <link rel="icon" type="image/png" href="./GOW_JUICE-removebg-preview.png" />
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navs.css" />
+    <!-- Three.js ES6 Module -->
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div
+        class="navbar-content-wrapper px-4 pb-3 pt-3 w-100 d-flex flex-column justify-content-between align-items-center bg-white"
+      >
+        <div
+          class="navbar-logo-wrapper w-100 d-flex justify-content-between align-items-center"
+        >
+          <button
+            class="btn p-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a
+            class="navbar-brand mx-auto position-absolute start-50 translate-middle-x"
+            href="index.html"
+          >
+            <img
+              src="./GOW_JUICE-removebg-preview.png"
+              alt="GowJuice"
+              height="40"
+            />
+          </a>
+                        <a href="https://linktr.ee/gowjus" class="btn btn-gradient text-bebas-neue m-6"
+                >Order!</a
+              >
+        </div>
+
+        <div class="w-100 mt-3 collapse hide" id="navbarNav">
+          <ul class="navbar-nav w-100 ms-auto gap-3">
+            <li
+              class="flex-grow-1 item-navbar-nav opacity-0 p-3 rounded-3 card min-w-250"
+            >
+              <h5
+                class="text-dropdown-item-link text-decoration-none text-black mb-3"
+              >
+                MENU
+              </h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="index.html#featured-products"
+                  >Menu Favorit</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="index.html#gridUI"
+                  >Nilai Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-dropdown-item-link text-decoration-none text-black"
+                  href="ingredients.html"
+                  >Ingredients</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="flex-grow-1 item-navbar-nav opacity-0 p-3 rounded-3 card min-w-250"
+            >
+              <h5
+                class="text-dropdown-item-link text-decoration-none text-black mb-3"
+              >
+                ABOUT
+              </h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="about.html"
+                  >Tentang GowJuice</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="about.html#gowjuice-us"
+                  >Gow Juice Untuk Kita</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="about.html#gowjuice-video"
+                  >Video Kampanye</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="flex-grow-1 item-navbar-nav opacity-0 p-3 rounded-3 card min-w-250"
+            >
+              <h5
+                class="text-dropdown-item-link text-decoration-none text-black mb-3"
+              >
+                CONTACT
+              </h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="https://linktr.ee/gowjus"
+                  >WhatsApp</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="https://www.instagram.com/gowjus.id"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                  href="https://www.tiktok.com/@gowjus.id"
+                  target="_blank"
+                  rel="noopener"
+                  >TikTok</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-dropdown-item-link text-decoration-none text-black"
+                    href="faq.html"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section. Konten utama -->
+    <section class="hero-section">
+      <div
+        class="hero-bg-icons position-absolute top-0 start-0 pb-12 w-100 h-100"
+        style="z-index: 0; pointer-events: none; 
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE/older Edge */"
+      ></div>
+      <div
+        class="hero-content-wrapper container row mx-auto"
+        style="position: relative; z-index: 1"
+      >
+        <div class="hero-content-left col">
+          <div class="d-flex align-items-center caption-jumbotron-wrapper">
+            <div class="">
+              <h1 class="display-4 fw-bold text-black mb-2">
+                Sehat itu
+                <span class="text-gowjuice-yellow text-bebas-neue">Gowes</span>,
+                Segar itu
+                <span class="text-gowjuice-green text-bebas-neue"
+                  >Gow Juice.</span
+                >
+              </h1>
+              <p class="text-black mb-4">
+                Gow Juice hadir sebagai teman setiap langkah sehatmu.
+                Terinspirasi dari semangat gowes, kami menghadirkan kesegaran
+                alami yang bukan hanya memuaskan dahaga, tetapi juga mendukung
+                gaya hidup aktif dan sehat. Setiap botol Gow Juice adalah energi
+                segar untuk terus bergerak, berolahraga, dan menikmati hidup.
+              </p>
+              <a href="#menu" class="btn btn-gradient text-bebas-neue"
+                >Dapatkan Sekarang!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="hero-content-right col d-flex justify-content-center align-items-center position-relative"
+        >
+          <img
+            src="./assets/gow juice jumbotron (1) (1).png"
+            alt="GowJuice"
+            class="w-100 h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="motto"
+      class="mx-auto d-flex flex-column relative justify-content-center align-items-center relative gap-5"
+    >
+      <div class="icons-bg absolute top-0 start-0 w-100 h-100">
+      </div>
+      <script>
+        // Dynamic, diverse, and aesthetic fruit icon background for #motto
+        (function() {
+          const iconList = [
+            'apple_415682.png',
+            'mango_17453049.png',
+            'strawberry_4264740.png',
+            'pineapple_5292654.png',
+            'avocado_1791417.png',
+            'carrot_7226576.png',
+            'melon_5997836.png',
+            'fruit_15677078.png',
+            'tomato_18316727.png',
+          ];
+          const themeColors = [
+            'rgba(56, 142, 60, 0.13)', // green
+            'rgba(255, 193, 7, 0.10)', // yellow
+            'rgba(255, 152, 0, 0.10)', // orange
+            'rgba(244, 67, 54, 0.10)', // red
+            'rgba(129, 199, 132, 0.10)', // light green
+            'rgba(255, 255, 255, 0.10)', // white
+          ];
+          const iconsBg = document.querySelector('.icons-bg');
+          if (!iconsBg) return;
+          iconsBg.innerHTML = '';
+          const iconCount = 18;
+          const iconDivs = [];
+          for (let i = 0; i < iconCount; i++) {
+            const iconName = iconList[Math.floor(Math.random() * iconList.length)];
+            const div = document.createElement('div');
+            div.className = 'icon-fruit';
+            // Diverse but not too small size
+            const size = Math.floor(Math.random() * 40) + 60; // 60-100px
+            div.style.width = size + 'px';
+            div.style.height = (size * (0.8 + Math.random() * 0.5)).toFixed(0) + 'px';
+            // --- DISTRIBUTION LOGIC ---
+            // Most icons on left/right, fewer in center
+            let left;
+            if (i < Math.floor(iconCount * 0.4)) {
+              // Left side (0-35%)
+              left = Math.random() * 28 + 2; // 2% - 30%
+            } else if (i >= Math.floor(iconCount * 0.6)) {
+              // Right side (70-98%)
+              left = Math.random() * 28 + 70; // 70% - 98%
+            } else {
+              // Center, but not too much
+              left = Math.random() * 24 + 38; // 38% - 62%
+            }
+            let top = Math.random() * 80 + 5; // 5% - 85%
+            div.style.top = top + '%';
+            div.style.left = left + '%';
+            div.style.transform = `translate(-50%, -50%) rotate(${Math.floor(Math.random()*24-12)}deg)`;
+            // Diverse background color
+            div.style.background = themeColors[Math.floor(Math.random()*themeColors.length)];
+            // Aesthetic filter
+            div.style.boxShadow = '0 2px 16px 0 rgba(0,0,0,0.07)';
+            div.style.opacity = 0.7 + Math.random()*0.2;
+            // Fruit image
+            const img = document.createElement('img');
+            img.src = './assets/icons/' + iconName;
+            img.alt = '';
+            img.className = 'icon-item';
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'contain';
+            img.style.filter = 'drop-shadow(0 2px 8px rgba(56,142,60,0.08))';
+            div.appendChild(img);
+            iconsBg.appendChild(div);
+            iconDivs.push(div);
+          }
+          // Set initial state for animation
+          iconDivs.forEach((div, i) => {
+            gsap.set(div, {opacity: 0, y: 40});
+          });
+          // ScrollTrigger animasi masuk satu per satu
+          if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.create({
+              trigger: '#motto',
+              start: 'top 80%',
+              onEnter: () => {
+                iconDivs.forEach((div, i) => {
+                  gsap.to(div, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.7,
+                    delay: 0.12 * i,
+                    ease: 'power2.out',
+                    onComplete: () => {
+                      // Floating animation (vertical only, no rotation, each icon has its own random duration/delay)
+                      const floatY = Math.floor(Math.random()*18+16); // 16-34px
+                      const floatDuration = Math.random()*2+2.5; // 2.5 - 4.5s
+                      const floatDelay = Math.random()*2; // 0 - 2s
+                      // 30% chance to sync with another icon (for some similarity)
+                      let sync = Math.random() < 0.3 && i > 0;
+                      let refIdx = Math.floor(Math.random()*i);
+                      let duration = sync ? iconDivs[refIdx].__floatDuration || floatDuration : floatDuration;
+                      let delay = sync ? iconDivs[refIdx].__floatDelay || floatDelay : floatDelay;
+                      div.__floatDuration = duration;
+                      div.__floatDelay = delay;
+                      gsap.to(div, {
+                        y: `+=${floatY}`,
+                        repeat: -1,
+                        yoyo: true,
+                        rotation: 0,
+                        duration: duration,
+                        delay: delay,
+                        ease: 'sine.inOut',
+                      });
+                    }
+                  });
+                });
+              },
+            });
+          } else {
+            // Fallback: show all icons if no ScrollTrigger
+            iconDivs.forEach((div, i) => {
+              gsap.to(div, {opacity: 1, y: 0, duration: 0.7, delay: 0.12 * i, ease: 'power2.out'});
+            });
+          }
+        })();
+      </script>
+
+
+      <!-- motto gowjuice -->
+      </div>
+      <div
+        class="motto-wrapper mx-auto d-flex justify-content-center align-items-start"
+      >
+        <div class="motto-card">
+          <div class="bg-motto-card"></div>
+          <img
+            src="./assets/icons/healthy_9340025.png"
+            alt=""
+            class="w-100 h-auto object-fit-cover"
+          />
+        </div>
+        <div class="motto-card">
+          <div class="bg-motto-card"></div>
+          <img
+            src="./assets/icons/juice_8243372.png"
+            class="w-100 h-auto object-fit-cover"
+            alt=""
+          />
+        </div>
+        <div class="motto-card">
+          <div class="bg-motto-card"></div>
+          <img
+            src="./assets/icons/lifestyles_6193322.png"
+            class="w-100 h-auto object-fit-cover"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        id="motto-description-wrapper"
+        class="w-75 text-center display-4"
+      ></div>
+    </section>
+
+    <!-- motto brand -->
+    <section class="grid m-6" id="gridUI">
+      <div class="grid-container">
+        <!-- Left Block - Innovation (Large) -->
+        <div class="grid-item grid-item-large innovation-block">
+          <div class="grid-image">
+            <img
+              src="./assets/produk gowjus1.jpg"
+              alt="Innovation"
+              class="w-100 h-100 object-fit-cover"
+            />
+          </div>
+          <div class="grid-overlay">
+            <div class="grid-content">
+  
+              <h3 class="grid-title-text text-white text-bebas-neue mb-1">Diracik dengan Kepedulian, Terinspirasi oleh Alam</h3>
+              <p class="grid-description">
+         Setiap botol Gow Juice lahir dari niat tulus untuk menghadirkan kesegaran alami bagi tubuh dan jiwa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Right Block - Ideation & Development -->
+        <div class="grid-item grid-item-small ideation-block">
+          <div class="grid-content text-center">
+            <div class="grid-icon mb-3">
+              <i
+                class="fa-solid fa-shield-halved text-white"
+                style="font-size: 2rem"
+              ></i>
+            </div>
+            <h3 class="grid-title-text text-bebas-neue text-white">
+              IDEATION & DEVELOPMENT
+            </h3>
+          </div>
+        </div>
+
+        <!-- Middle Right Block - Eco-friendly Solution -->
+        <div class="grid-item grid-item-small eco-block">
+          <div class="grid-image">
+            <img
+              src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop"
+              alt="Eco-friendly"
+              class="w-100 h-100 object-fit-cover"
+            />
+          </div>
+          <div class="grid-overlay">
+            <div class="grid-content">
+              <div class="grid-stats">
+                <span class="stats-number text-bebas-neue">64K</span>
+                <span class="stats-text">Liked our Eco-friendly Solution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Right Block - Spark Innovation -->
+        <div class="grid-item grid-item-small innovation-small-block">
+          <div class="grid-image">
+            <img
+              src="./assets/produk gowjus.jpg"
+              alt="Spark Innovation"
+              class="w-100 h-100 object-fit-cover"
+            />
+          </div>
+          <div class="grid-overlay">
+            <div class="grid-content">
+              <h3 class="grid-title-text text-bebas-neue text-white">
+               Crafted with Care, Inspired by Nature
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Produk yang ada -->
+    <section id="featured-products" class="">
+  <div class="gowjuice-reset">
+        <div class="gowjuice-wrapper">
+            <div class="gowjuice-container">
+                <h1 class="gowjuice-title">GOW JUICE MENUS</h1>
+                <p class="gowjuice-subtitle">Vitamin Alami di Setiap Tegukan untuk Bantu Tubuh Tetap Fit dan Bugar</p>
+                
+                <div class="gowjuice-products-grid">
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/Nanasss.png" alt="Orange Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Orange Juice</h3>
+                        <p class="gowjuice-product-description">Segar dan kaya vitamin C untuk meningkatkan imunitas tubuh Anda</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/appleee.png" alt="Apple Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Apple Juice</h3>
+                        <p class="gowjuice-product-description">Manis alami dengan antioksidan tinggi untuk kesehatan jantung</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/Watermelon.png" alt="Watermelon Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Watermelon Juice</h3>
+                        <p class="gowjuice-product-description">Menyegarkan dan menghidrasi tubuh dengan kandungan air tinggi</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="assets/menus/Avocadooo.png" alt="Avocado Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Avocado Juice</h3>
+                        <p class="gowjuice-product-description">Creamy dan kaya lemak sehat untuk energi sepanjang hari</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/Semongkoo.png" alt="Strawberry Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Strawberry Juice</h3>
+                        <p class="gowjuice-product-description">Manis segar dengan antioksidan untuk kulit sehat dan bercahaya</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/grape.png" alt="Grape Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Grape Juice</h3>
+                        <p class="gowjuice-product-description">Kaya resveratrol untuk kesehatan jantung dan anti-aging</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/Nanasss.png" alt="Pineapple Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Pineapple Juice</h3>
+                        <p class="gowjuice-product-description">Tropical segar dengan enzim bromelain untuk pencernaan sehat</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/Kiwi.png" alt="Kiwi Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Kiwi Juice</h3>
+                        <p class="gowjuice-product-description">Super vitamin C dan E untuk sistem kekebalan tubuh optimal</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+
+                    <div class="gowjuice-product-card">
+                        <img src="./assets/menus/Manggo.png" alt="Mango Juice" class="gowjuice-product-image">
+                        <h3 class="gowjuice-product-name">Mango Juice</h3>
+                        <p class="gowjuice-product-description">Manis tropical dengan beta-karoten untuk kesehatan mata</p>
+                        <a href="https://linktr.ee/gowjus" class="gowjuice-order-btn" target="_blank">Order!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Banner yang ada orang lari, atau sport campaign -->
+    <section
+      id="sports-juice"
+      class="container mx-6 mb-6 bg-dark position-relative overflow-hidden p-0"
+    >
+      <img
+        src="./assets/pelari_culture.jpg"
+        class="img-fluid rounded-top w-100 h-100 object-fit-cover object-position-center"
+        alt=""
+      />
+      <div class="description-sport-juice position-absolute">
+        <h1>Segarkan Setiap Langkah Bersama Gow Juice.</h1>
+        <p>
+Dari kayuhan pagi hingga langkah sore, Gow Juice menjaga semangat tetap menyala.
+Seteguk alam, semburat energi — kesegaran murni yang selalu menemani.
+Tanpa bahan palsu, hanya rasa segar penuh dedikasi.
+Diciptakan untuk para penggerak, pemimpi, dan pencapai tujuan.
+Setiap botol adalah bahan bakar untuk hidup yang aktif dan penuh makna.
+Dari roda yang berputar hingga langkah yang membara, Gow Juice hadir mengembalikan semangat dan keseimbangan.
+Segarkan setiap langkah bersama Gow Juice.
+        </p>
+        <div class="button-custom">
+          <a href="#menu" class="btn btn-gradient text-bebas-neue py-0"
+            >About Us!</a
+          >
+        </div>
+      </div>
+    </section>    
+    
+    
+    <!-- Footer yang ada di paling bawah. -->
+    <footer class="footer-gowjuice mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <h4 class="footer-section-title">🍏 GOWJUICE</h4>
+            <p class="footer-copyright-text">
+              <i class="fas fa-copyright"></i>
+              2025 GOWJUICE
+            </p>
+            <p class="footer-brand-desc">
+              Gow Juice hadir sebagai teman setiap langkah sehatmu. Terinspirasi
+              dari semangat gowes, kami menghadirkan kesegaran alami yang bukan
+              hanya memuaskan dahaga, tetapi juga mendukung gaya hidup aktif dan
+              sehat.
+            </p>
+            <a href="index.html#featured-products" class="footer-explore-btn">Explore Menu!</a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="footer-social-wrapper">
+              <h4 class="footer-section-title">🌟 Sosial Media</h4>
+              <div class="footer-social-links">
+                <a href="https://www.instagram.com/gowjus.id" class="footer-social-btn">
+                  <i class="fab fa-instagram"></i>
+                  @gowjus.id
+                </a>
+                <a href="#" class="footer-social-btn">
+                  <i class="fab fa-facebook"></i>
+                  (COMING SOON)
+                </a>
+                <a href="https://www.tiktok.com/@gowjus.id" class="footer-social-btn">
+                  <i class="fab fa-tiktok"></i>
+                  @gowjus.id
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-contact-wrapper">
+              <h4 class="footer-section-title">📍 Hubungi Kami</h4>
+              <p class="footer-contact-item">
+                <i class="fas fa-phone footer-contact-icon"></i>
+                <a href="https://wa.me/6282247361557" style="text-decoration: none; color: inherit;">+62 812-3456-7890</a>
+              </p>
+              <p class="footer-contact-item">
+                <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                Bali, Indonesia
+              </p>
+              <p class="footer-contact-item">
+                <i class="fas fa-clock footer-contact-icon"></i>
+                09:00 AM - 05:00 PM
+              </p>
+              <p class="footer-contact-item">
+                <i class="fas fa-envelope footer-contact-icon"></i>
+                info@gowjuice.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-bar">Made by GOWJUICE Team</div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script src="swiper.js"></script>
+    <script src="gsap.js"></script>
+    <script>
+      // GSAP Fruit Icons Background for Hero Section
+      document.addEventListener("DOMContentLoaded", function () {
+        const iconList = [
+          "apple_415682.png",
+          "mango_17453049.png",
+          "strawberry_4264740.png",
+          "pineapple_5292654.png",
+          "avocado_1791417.png",
+          "carrot_7226576.png",
+          "tomato_18316727.png",
+          "fruit_15677078.png",
+          "food_11787272.png",
+          "melon_5997836.png",
+        ];
+        const heroSection = document.querySelector(".hero-section");
+        const bgContainer = heroSection.querySelector(".hero-bg-icons");
+        const iconCount = 18;
+        const sectionRect = heroSection.getBoundingClientRect();
+        const sectionW = sectionRect.width || heroSection.offsetWidth;
+        const sectionH = sectionRect.height || heroSection.offsetHeight || 500;
+        function randomBetween(a, b) {
+          return a + Math.random() * (b - a);
+        }
+        for (let i = 0; i < iconCount; i++) {
+          const iconName =
+            iconList[Math.floor(Math.random() * iconList.length)];
+          const img = document.createElement("img");
+          const size = randomBetween(40, 80);
+          img.src = "./assets/icons/" + iconName;
+          img.alt = "";
+          img.style.position = "absolute";
+          img.style.width = size + "px";
+          img.style.height = size + "px";
+          img.style.opacity = 0.8;
+          img.style.pointerEvents = "none";
+          // Random position, avoid center overlap
+          let left = randomBetween(0, 100);
+          let top = randomBetween(0, 100);
+          // Avoid too much overlap in center (30-70%)
+          if (left > 30 && left < 70 && top > 30 && top < 70) {
+            if (Math.random() > 0.5) left = left < 50 ? left - 20 : left + 20;
+            else top = top < 50 ? top - 20 : top + 20;
+          }
+          img.style.left = left + "%";
+          img.style.top = top + "%";
+          img.style.transform = `translate(-50%, -50%) rotate(${randomBetween(
+            -20,
+            20
+          )}deg)`;
+          bgContainer.appendChild(img);
+          // Floating animation
+          const floatY = randomBetween(15, 40);
+          gsap.to(img, {
+            y: `+=${floatY}`,
+            repeat: -1,
+            yoyo: true,
+            duration: randomBetween(2.5, 5),
+            delay: randomBetween(0, 2),
+            ease: "sine.inOut",
+          });
+        }
+        // Pastikan overflow hidden
+        heroSection.style.overflow = "hidden";
+
+        // GSAP Hero Content Animation on Load
+        const heroContent = heroSection.querySelector(".hero-content-wrapper");
+        if (heroContent) {
+          const heroLeft = heroContent.querySelector(".hero-content-left");
+          const heroRight = heroContent.querySelector(".hero-content-right");
+          gsap.set([heroLeft, heroRight], { opacity: 0, y: 60 });
+          gsap.to(heroLeft, {
+            opacity: 1,
+            y: 0,
+            duration: 1.1,
+            delay: 0.2,
+            ease: "power3.out",
+          });
+          gsap.to(heroRight, {
+            opacity: 1,
+            y: 0,
+            duration: 1.1,
+            delay: 0.5,
+            ease: "power3.out",
+          });
+          // Fade-in background icons
+          const bgIcons = heroSection.querySelector(".hero-bg-icons");
+          if (bgIcons) {
+            gsap.set(bgIcons, { opacity: 0 });
+            gsap.to(bgIcons, {
+              opacity: 1,
+              duration: 1.2,
+              delay: 0.1,
+              ease: "power2.out",
+            });
+          }
+        }
+      });
+    </script>
+    
+  </body>
+</html>

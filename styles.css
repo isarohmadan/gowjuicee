@@ -237,8 +237,16 @@ h3 {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
 }
+.description-jumbotron{
+  background-color: none;
+  padding: 0;
+}
 
 @media (max-width: 768px) {
+  .description-jumbotron { 
+        background-color: rgb(250 235 210 / 71%);
+    padding: 10px;
+  }
   .hero-bg-icons {
     overflow-x: hidden;
   }

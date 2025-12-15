@@ -671,7 +671,7 @@ body {
 .process-illustration {
   height: inherit;
   border-radius: 12px;
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 0rem 2rem 3rem 2rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -702,6 +702,15 @@ body {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+  .illustration-description {
+  font-size: 1.5rem;
+  /* font-weight: 600; */
+  color: var(--text-dark);
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  /* text-align: center; */
+  line-height: 1.1;
+}
   .step-step {
     max-width: 100%;
     margin: 0 2rem;
@@ -795,6 +804,6 @@ body {
   .vegetables-section,
   .fruits-section,
   .cta-section {
-    padding: 30px 0;
+    padding: 30px 0 30px 0;
   }
 }

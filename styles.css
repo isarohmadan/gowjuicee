@@ -3,6 +3,93 @@
 /* bebas neue */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+/* WhatsApp Sticky Button */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-sticky .whatsapp-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  animation: whatsapp-pulse 2s infinite;
+}
+
+.whatsapp-sticky .whatsapp-btn i {
+  font-size: 32px;
+  color: white;
+}
+
+.whatsapp-sticky .whatsapp-text {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+  color: #128c7e;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.whatsapp-sticky:hover .whatsapp-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.whatsapp-sticky:hover .whatsapp-btn {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-sticky {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-sticky .whatsapp-btn {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .whatsapp-sticky .whatsapp-btn i {
+    font-size: 28px;
+  }
+  
+  .whatsapp-sticky .whatsapp-text {
+    display: none;
+  }
+}
+
 /* Global Styles */
 :root {
   --gowjuice-green: hsl(122, 39%, 49%);

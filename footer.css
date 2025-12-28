@@ -1,5 +1,5 @@
 /* ========== FOOTER STYLES - UNIQUE CLASSES ========== */
-.footer-gowjuice {
+.footer-Gowjus {
   background: #f5ebe0;
   color: #2d3e22;
   padding: 60px 0 30px;
@@ -238,11 +238,11 @@
 }
 
 @media (max-width: 576px) {
-  .footer-gowjuice {
+  .footer-Gowjus {
     padding: 40px 0 20px;
   }
 
-  .footer-gowjuice::before {
+  .footer-Gowjus::before {
     font-size: 2rem;
     letter-spacing: 10px;
   }

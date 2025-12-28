@@ -8,7 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--gowjuice-main-bg);
+  background-color: var(--Gowjus-main-bg);
   color: var(--text-dark);
 }
 
@@ -16,7 +16,7 @@ body {
   font-size: x-large;
   color: white;
   position: relative !important;
-  background-color: var(--gowjuice-dark-green);
+  background-color: var(--Gowjus-dark-green);
   transition: all ease-in-out 0.2s;
   border: 2px solid black;
 }
@@ -31,19 +31,19 @@ body {
   border: 2px solid black;
   transition: all ease-in-out 0.2s;
   border-radius: 0.375rem;
-  background-color: var(--gowjuice-yellow);
+  background-color: var(--Gowjus-yellow);
   z-index: -2;
 }
 
 .btn-gradient:hover {
-  background-color: var(--gowjuice-dark-green);
+  background-color: var(--Gowjus-dark-green);
   border: 2px solid black;
   color: white;
 }
 
 .btn.btn-gradient:active,
 .btn.btn-gradient:focus {
-  background: var(--gowjuice-dark-green) !important;
+  background: var(--Gowjus-dark-green) !important;
   color: #fff !important;
   box-shadow: none !important; /* hilangkan efek focus bootstrap */
   outline: none !important;
@@ -58,7 +58,7 @@ body {
   left: 0;
   border: 2px solid black;
   border-radius: 0.375rem;
-  background-color: var(--gowjuice-orange);
+  background-color: var(--Gowjus-orange);
   z-index: -1;
 }
 
@@ -70,7 +70,7 @@ body {
   transform: translate(10px, 10px);
 }
 
-.jumbotron-gowjuice-main-content {
+.jumbotron-Gowjus-main-content {
   min-height: 100vh;
   margin-top: 7rem;
   flex-direction: column;
@@ -86,23 +86,23 @@ body {
 }
 
 .font-btn-neue,
-.header-content-gowjuice,
-.header-content-gowjuice span {
+.header-content-Gowjus,
+.header-content-Gowjus span {
   font-family: "Bebas Neue";
 }
 
-.image-container-gowjuice {
+.image-container-Gowjus {
   width: 70%;
   padding: 3rem;
   position: relative;
   margin: 1.5rem auto 0;
   /* border-radius: 10px; */
 }
-.image-container-gowjuice img {
+.image-container-Gowjus img {
   border-radius: 10px;
 }
 
-.image-container-gowjuice::after {
+.image-container-Gowjus::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -116,7 +116,7 @@ body {
   z-index: -1;
 }
 
-.gowjuice-movement-section {
+.Gowjus-movement-section {
   padding: 4rem 0;
 }
 .descripton-wrapper p,
@@ -145,7 +145,7 @@ body {
 .movement-eyebrow {
   letter-spacing: 0.25rem;
   font-weight: 600;
-  color: var(--gowjuice-dark-green);
+  color: var(--Gowjus-dark-green);
 }
 
 .movement-title,
@@ -157,7 +157,7 @@ body {
 }
 
 .movement-title span {
-  color: var(--gowjuice-dark-green);
+  color: var(--Gowjus-dark-green);
 }
 
 .movement-description {
@@ -167,7 +167,7 @@ body {
 }
 
 .movement-cta {
-  background-color: var(--gowjuice-dark-green);
+  background-color: var(--Gowjus-dark-green);
   border: 0;
   color: #fff;
   border-radius: 12px;
@@ -217,10 +217,10 @@ body {
     width: 60%;
   }
   .descripton-wrapper,
-  .image-container-gowjuice {
+  .image-container-Gowjus {
     z-index: 100;
   }
-  .jumbotron-gowjuice-main-content {
+  .jumbotron-Gowjus-main-content {
     margin-top: 7rem;
     margin-bottom: 3rem;
     min-height: auto;
@@ -241,7 +241,7 @@ body {
   .movement-description {
     font-size: small;
   }
-  .gowjuice-movement-section {
+  .Gowjus-movement-section {
     padding: 3rem 0;
   }
 }
@@ -250,10 +250,10 @@ body {
   .gallery-stack-item {
     min-height: auto;
   }
-  .image-container-gowjuice {
+  .image-container-Gowjus {
     width: 90%;
   }
-  .jumbotron-gowjuice-main-content {
+  .jumbotron-Gowjus-main-content {
     min-height: auto;
     /* margin-top: 0; */
     gap: 2rem;
@@ -278,7 +278,7 @@ body {
   }
 }
 
-.gowjuice-video-section {
+.Gowjus-video-section {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -289,7 +289,7 @@ body {
   color: #fff;
 }
 
-.gowjuice-video {
+.Gowjus-video {
   position: absolute;
   inset: 0;
   width: 100%;

@@ -4,16 +4,16 @@
 
 /* Global Styles */
 :root {
-  --gowjuice-green: hsl(122, 39%, 49%);
-  --gowjuice-dark-green: #388e3c;
-  --gowjuice-light-green: #81c784;
-  --gowjuice-orange: #ff9800;
-  --gowjuice-red: #f44336;
-  --gowjuice-yellow: #ffc107;
+  --Gowjus-green: hsl(122, 39%, 49%);
+  --Gowjus-dark-green: #388e3c;
+  --Gowjus-light-green: #81c784;
+  --Gowjus-orange: #ff9800;
+  --Gowjus-red: #f44336;
+  --Gowjus-yellow: #ffc107;
   --text-dark: #040404;
   --text-light: #6f6f6f;
   --bg-light: #f8f9fa;
-  --gowjuice-main-bg: #fff3ea;
+  --Gowjus-main-bg: #fff3ea;
   --bg-natural: #f1f8e9;
 }
 
@@ -21,7 +21,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--text-dark);
 
-  background: var(--gowjuice-main-bg);
+  background: var(--Gowjus-main-bg);
   margin: 0;
   padding: 0;
 }
@@ -30,7 +30,7 @@ body {
   font-size: x-large;
   color: white;
   position: relative !important;
-  background-color: var(--gowjuice-dark-green);
+  background-color: var(--Gowjus-dark-green);
   transition: all ease-in-out 0.2s;
   border: 2px solid black;
 }
@@ -45,19 +45,19 @@ body {
   border: 2px solid black;
   transition: all ease-in-out 0.2s;
   border-radius: 0.375rem;
-  background-color: var(--gowjuice-yellow);
+  background-color: var(--Gowjus-yellow);
   z-index: -2;
 }
 
 .btn-gradient:hover {
-  background-color: var(--gowjuice-dark-green);
+  background-color: var(--Gowjus-dark-green);
   border: 2px solid black;
   color: white;
 }
 
 .btn.btn-gradient:active,
 .btn.btn-gradient:focus {
-  background: var(--gowjuice-dark-green) !important;
+  background: var(--Gowjus-dark-green) !important;
   color: #fff !important;
   box-shadow: none !important; /* hilangkan efek focus bootstrap */
   outline: none !important;
@@ -72,7 +72,7 @@ body {
   left: 0;
   border: 2px solid black;
   border-radius: 0.375rem;
-  background-color: var(--gowjuice-orange);
+  background-color: var(--Gowjus-orange);
   z-index: -1;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .hero-bottom-bar {
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 
 .award-text {
@@ -274,7 +274,7 @@ body {
   margin-right: 2rem;
 }
 .step-step:hover .step-title {
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
 }
 
 .step-item {
@@ -291,7 +291,7 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
   font-weight: 700;
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
   margin-bottom: 1rem;
   line-height: 1;
 }
@@ -333,7 +333,7 @@ body {
 .seasonal-text {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
   margin: 0;
 }
 
@@ -387,7 +387,7 @@ body {
 }
 
 .form-select {
-  border: 1px solid var(--gowjuice-green);
+  border: 1px solid var(--Gowjus-green);
   border-radius: 6px;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
@@ -517,7 +517,7 @@ body {
 }
 
 .tag {
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
@@ -528,7 +528,7 @@ body {
 .product-price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
   margin-bottom: 1rem;
 }
 
@@ -609,13 +609,13 @@ body {
 .fruit-price {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
 }
 
 /* CTA Section */
 .cta-section {
   padding: 80px 0;
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   color: white;
 }
 
@@ -655,7 +655,7 @@ body {
 }
 
 .social-link:hover {
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
 }
 
 .process-section .row {
@@ -667,11 +667,13 @@ body {
   color: rgba(255, 255, 255, 0.7);
   margin: 0.25rem 0;
 }
+.button-pesan-container{
+  text-align: end;
+}
 
 .process-illustration {
   height: inherit;
   border-radius: 12px;
-  padding: 0rem 2rem 3rem 2rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -702,6 +704,12 @@ body {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+  .button-pesan-container {
+    text-align: center;
+  }
+  .hero-content {
+  margin-top: 2rem;
+}
   .illustration-description {
   font-size: 1.5rem;
   /* font-weight: 600; */
@@ -772,6 +780,12 @@ body {
 }
 
 @media (max-width: 576px) {
+  .button-pesan-container {
+    text-align: center;
+  }
+  .process-illustration {
+    padding: 0rem 2rem 3rem 2rem;
+  }
   .hero-title {
     font-size: 2rem;
   }

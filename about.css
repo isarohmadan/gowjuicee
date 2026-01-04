@@ -112,8 +112,54 @@ body {
   border: 5px solid black;
   top: 0;
   left: 0;
-  margin: 10px 0 0 10px;
   z-index: -1;
+}
+
+/* =========================
+   GOWJUS SWIPER SLIDER STYLES
+   ========================= */
+.gowjus-swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gowjus-swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.gowjus-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Custom Pagination Styles */
+.gowjus-swiper .swiper-pagination {
+  bottom: 15px !important;
+}
+
+.gowjus-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.gowjus-swiper .swiper-pagination-bullet:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+.gowjus-swiper .swiper-pagination-bullet-active {
+  background-color: var(--Gowjus-dark-green, #073019);
+  border-color: #fff;
+  transform: scale(1.2);
 }
 
 .Gowjus-movement-section {
@@ -247,11 +293,9 @@ body {
 }
 
 @media (max-width: 575px) {
-  .gallery-stack-item {
-    min-height: auto;
-  }
   .image-container-Gowjus {
     width: 90%;
+    padding: 1rem;
   }
   .jumbotron-Gowjus-main-content {
     min-height: auto;

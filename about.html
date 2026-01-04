@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -176,7 +178,6 @@
         </div>
       </div>
     </nav>
-
     <!-- main page layout -->
     <section class="d-flex align-items-center justify-content-center relative">
       <div
@@ -197,12 +198,35 @@
           >
         </div>
 
-        <div class="image-container-Gowjus px-7 ratio ratio-16x9">
-          <img
-            src="./assets/customer-buying-eggplants.jpg"
-            alt=""
-            class="w-100 h-100 object-fit-cover object-position-center"
-          />
+        <div class="image-container-Gowjus ratio">
+          <!-- Swiper Slider -->
+          <div class="swiper gowjus-swiper" >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/sliders/1.png" alt="Gowjus Slide 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/2.png" alt="Gowjus Slide 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/3.png" alt="Gowjus Slide 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/4.png" alt="Gowjus Slide 4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/5.png" alt="Gowjus Slide 5" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/6.png" alt="Gowjus Slide 6" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/7.png" alt="Gowjus Slide 7" />
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
 
@@ -439,6 +463,51 @@
               },
             });
           }
+        }
+      });
+
+      // =========================
+      // GOWJUS SWIPER SLIDER
+      // =========================
+      const gowjusSwiper = new Swiper(".gowjus-swiper", {
+        loop: true,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        speed: 800,
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Re-initialize Swiper after library loads
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Swiper !== "undefined") {
+          new Swiper(".gowjus-swiper", {
+            loop: true,
+            effect: "fade",
+            fadeEffect: {
+              crossFade: true,
+            },
+            autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            speed: 800,
+          });
         }
       });
     </script>

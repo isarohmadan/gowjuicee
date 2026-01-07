@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="navs.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -50,12 +53,12 @@
           >
             <img
               src="./assets/logo.jpeg"
-              alt="GowJuice"
+              alt="Gowjus"
               height="40"
             />
           </a>
           <a
-            href="https://linktr.ee/gowjus"
+            href="https://wa.me/6282247361557"
             class="btn btn-gradient text-bebas-neue m-6"
             >Order!</a
           >
@@ -75,15 +78,15 @@
                 <li>
                   <a
                     class="text-dropdown-item-link text-decoration-none text-black"
-                    href="index.html#featured-products"
-                    >Menu Favorit</a
+                    href="index.html#gridUI"
+                    >Nilai Kami</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-dropdown-item-link text-decoration-none text-black"
-                    href="index.html#gridUI"
-                    >Nilai Kami</a
+                    href="index.html#featured-products"
+                    >Menu Favorit</a
                   >
                 </li>
                 <li>
@@ -109,20 +112,20 @@
                   <a
                     class="text-dropdown-item-link text-decoration-none text-black"
                     href="about.html"
-                    >Tentang GowJuice</a
+                    >Tentang Gowjus</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-dropdown-item-link text-decoration-none text-black"
-                    href="about.html#gowjuice-us"
-                    >Gow Juice Untuk Kita</a
+                    href="about.html#Gowjus-us"
+                    >Gowjus Untuk Kita</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-dropdown-item-link text-decoration-none text-black"
-                    href="about.html#gowjuice-video"
+                    href="about.html#Gowjus-video"
                     >Video Kampanye</a
                   >
                 </li>
@@ -140,7 +143,7 @@
                 <li>
                   <a
                     class="text-dropdown-item-link text-decoration-none text-black"
-                    href="https://linktr.ee/gowjus"
+                    href="https://wa.me/6282247361557"
                     >WhatsApp</a
                   >
                 </li>
@@ -175,33 +178,55 @@
         </div>
       </div>
     </nav>
-
     <!-- main page layout -->
     <section class="d-flex align-items-center justify-content-center relative">
       <div
-        class="container jumbotron-gowjuice-main-content d-flex justify-content-center align-items-center text-center max-h-100"
+        class="container jumbotron-Gowjus-main-content d-flex justify-content-center align-items-center text-center max-h-100"
       >
         <div class="descripton-wrapper">
-          <h1 class="display-2 header-content-gowjuice fw-bold mb-1">
+          <h1 class="display-2 header-content-Gowjus fw-bold mb-1">
             Selamat Datang di
-            <span style="color: var(--gowjuice-dark-green)">GowJuice</span>
+            <span style="color: var(--Gowjus-dark-green)">Gowjus</span>
           </h1>
           <p class="fs-7 mb-4">
             Kesegaran alami untuk mendukung gaya hidup sehatmu.<br />
             Jelajahi cerita kami & mulailah hari yang lebih bugar dengan jus
             pilihan terbaik!
           </p>
-          <a href="#about" class="btn font-btn-neue btn-gradient btn-sm px-4"
+          <a href="ingredients.html" class="btn font-btn-neue btn-gradient btn-sm px-4"
             >Bahan</a
           >
         </div>
 
-        <div class="image-container-gowjuice px-7 ratio ratio-16x9">
-          <img
-            src="./assets/customer-buying-eggplants.jpg"
-            alt=""
-            class="w-100 h-100 object-fit-cover object-position-center"
-          />
+        <div class="image-container-Gowjus ratio">
+          <!-- Swiper Slider -->
+          <div class="swiper gowjus-swiper" >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/sliders/1.png" alt="Gowjus Slide 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/2.png" alt="Gowjus Slide 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/3.png" alt="Gowjus Slide 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/4.png" alt="Gowjus Slide 4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/5.png" alt="Gowjus Slide 5" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/6.png" alt="Gowjus Slide 6" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/sliders/7.png" alt="Gowjus Slide 7" />
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
 
@@ -215,28 +240,28 @@
       </div>
     </section>
 
-    <section class="gowjuice-movement-section mt-3" id="gowjuice-us">
+    <section class="Gowjus-movement-section mt-3" id="Gowjus-us">
       <div class="container movement-grid">
         <div class="movement-copy position-relative">
           <img
             src="./assets/Vector 1.png"
-            alt="Gow Juice arrow"
+            alt="Gowjus arrow"
             class="movement-arrow"
           />
           <h2 class="movement-title display-2">
-            <span>GOW JUICE </span>UNTUK KITA
+            <span>Gowjus </span>UNTUK KITA
           </h2>
           <p class="movement-description fs-10 mb-4">
-            Gow Juice for Us adalah ajakan untuk bergerak bersama. Bukan hanya
+            Gowjus for Us adalah ajakan untuk bergerak bersama. Bukan hanya
             soal minuman, tapi soal kebiasaan sehat yang dibangun bareng. Kami
             menghadirkan kesegaran alami sebagai dukungan nyata untuk setiap
             langkah — entah itu gowes, lari, atau aktivitas harian. Kampanye ini
             menekankan kebersamaan, energi positif, dan komitmen untuk hidup
-            lebih aktif. Lewat Gow Juice, kami ingin membuktikan bahwa kesehatan
+            lebih aktif. Lewat Gowjus, kami ingin membuktikan bahwa kesehatan
             itu sederhana: dimulai dari bergerak dan menjaga apa yang kita
             konsumsi. Ini bukan tren; ini gaya hidup yang kita bangun sama-sama.
           </p>
-          <a href="#about" class="btn font-btn-neue btn-gradient btn-sm px-4"
+          <a href="ingredients.html" class="btn font-btn-neue btn-gradient btn-sm px-4"
             >Bahan</a
           >
         </div>
@@ -244,7 +269,7 @@
           <div class="gallery-main">
             <img
               src="./assets/pelari_culture.jpg"
-              alt="Petani di perkebunan Gow Juice"
+              alt="Petani di perkebunan Gowjus"
               class="w-100 h-100 object-fit-cover"
             />
           </div>
@@ -259,7 +284,7 @@
             <div class="gallery-stack-item">
               <img
                 src="./assets/close-up-drink-table.jpg"
-                alt="Hidangan jus Gow Juice"
+                alt="Hidangan jus Gowjus"
                 class="w-100 h-100 object-fit-cover"
               />
             </div>
@@ -268,9 +293,9 @@
       </div>
     </section>
 
-    <section class="gowjuice-video-section" id="gowjuice-video">
+    <section class="Gowjus-video-section" id="Gowjus-video">
       <video
-        class="gowjuice-video"
+        class="Gowjus-video"
         autoplay
         loop
         muted
@@ -278,7 +303,7 @@
         poster="./assets/produk gowjus.jpg"
       >
         <source
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          src="assets/mov/movie-Gowjus.mp4"
           type="video/mp4"
         />
         Browser kamu tidak mendukung video.
@@ -287,29 +312,29 @@
         <p class="text-uppercase mb-2 fw-semibold tracking-wide">Tanpa Henti</p>
         <h3 class="mb-3">ENERGI ALAMI UNTUK SETIAP GERAK</h3>
         <p class="mb-0">
-          Visual perjalanan tanaman hingga menjadi Gow Juice—dalam loop, tanpa
+          Visual perjalanan tanaman hingga menjadi Gowjus—dalam loop, tanpa
           suara, supaya kamu bisa merasakan vibe segar kami kapan pun.
         </p>
       </div> -->
     </section>
 
     <!-- Footer yang ada di paling bawah. -->
-    <footer class="footer-gowjuice">
+    <footer class="footer-Gowjus">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <h4 class="footer-section-title">🍏 GOWJUICE</h4>
+            <h4 class="footer-section-title">🍏 Gowjus</h4>
             <p class="footer-copyright-text">
               <i class="fas fa-copyright"></i>
-              2025 GOWJUICE
+              2025 Gowjus
             </p>
             <p class="footer-brand-desc">
-              Gow Juice hadir sebagai teman setiap langkah sehatmu. Terinspirasi
+              Gowjus hadir sebagai teman setiap langkah sehatmu. Terinspirasi
               dari semangat gowes, kami menghadirkan kesegaran alami yang bukan
               hanya memuaskan dahaga, tetapi juga mendukung gaya hidup aktif dan
               sehat.
             </p>
-            <a href="https://linktr.ee/gowjus" class="footer-explore-btn"
+            <a href="index.html#featured-products" class="footer-explore-btn"
               >Explore Menu!</a
             >
           </div>
@@ -323,10 +348,6 @@
                 >
                   <i class="fab fa-instagram"></i>
                   @gowjus.id
-                </a>
-                <a href="#" class="footer-social-btn">
-                  <i class="fab fa-facebook"></i>
-                  (COMING SOON)
                 </a>
                 <a
                   href="https://www.tiktok.com/@gowjus.id"
@@ -346,7 +367,7 @@
                 <a
                   href="https://wa.me/6282247361557"
                   style="text-decoration: none; color: inherit"
-                  >+62 812-3456-7890</a
+                  >+62 822-4736-1557</a
                 >
               </p>
               <p class="footer-contact-item">
@@ -359,12 +380,12 @@
               </p>
               <p class="footer-contact-item">
                 <i class="fas fa-envelope footer-contact-icon"></i>
-                info@gowjuice.com
+                dharmaprima93@gmail.com
               </p>
             </div>
           </div>
         </div>
-        <div class="footer-bottom-bar">Made by GOWJUICE Team</div>
+        <div class="footer-bottom-bar">Made by Gowjus Team</div>
       </div>
     </footer>
 
@@ -388,7 +409,7 @@
           .from(".ornament-left", { x: "-120%", opacity: 0 })
           .from(".ornament-right", { x: "120%", opacity: 0 }, "<")
           .from(
-            ".jumbotron-gowjuice-main-content",
+            ".jumbotron-Gowjus-main-content",
             { opacity: 0, y: 40, duration: 1.5 },
             "-=0.4"
           );
@@ -398,45 +419,45 @@
             gsap
               .timeline({
                 scrollTrigger: {
-                  trigger: "#gowjuice-us",
+                  trigger: "#Gowjus-us",
                   start: "top 75%",
                   once: true,
                 },
                 defaults: { ease: "power3.out" },
               })
-              .from("#gowjuice-us .movement-title", {
+              .from("#Gowjus-us .movement-title", {
                 opacity: 0,
                 y: 40,
                 duration: 0.7,
               })
               .from(
-                "#gowjuice-us .movement-description",
+                "#Gowjus-us .movement-description",
                 { opacity: 0, y: 30, duration: 1 },
                 "-=0.2"
               )
               .from(
-                "#gowjuice-us .movement-copy .btn",
+                "#Gowjus-us .movement-copy .btn",
                 { opacity: 0, y: 20, duration: 0.8 },
                 "-=0.2"
               )
               .from(
-                "#gowjuice-us .movement-arrow",
+                "#Gowjus-us .movement-arrow",
                 { opacity: 0, y: -20, duration: 1 },
                 "-=0.1"
               )
-              .from("#gowjuice-us .movement-gallery", {
+              .from("#Gowjus-us .movement-gallery", {
                 opacity: 0,
                 y: 60,
                 duration: 1,
               });
           } else {
-            gsap.from("#gowjuice-us .movement-grid > *", {
+            gsap.from("#Gowjus-us .movement-grid > *", {
               opacity: 0,
               y: 30,
               duration: 0.8,
               stagger: 0.1,
               scrollTrigger: {
-                trigger: "#gowjuice-us",
+                trigger: "#Gowjus-us",
                 start: "top 80%",
                 once: true,
               },
@@ -444,6 +465,59 @@
           }
         }
       });
+
+      // =========================
+      // GOWJUS SWIPER SLIDER
+      // =========================
+      const gowjusSwiper = new Swiper(".gowjus-swiper", {
+        loop: true,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        speed: 800,
+      });
     </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Re-initialize Swiper after library loads
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof Swiper !== "undefined") {
+          new Swiper(".gowjus-swiper", {
+            loop: true,
+            effect: "fade",
+            fadeEffect: {
+              crossFade: true,
+            },
+            autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            speed: 800,
+          });
+        }
+      });
+    </script>
+    <!-- WhatsApp Sticky Button -->
+    <a href="https://wa.me/6282247361557" class="whatsapp-sticky" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+      <span class="whatsapp-text">Chat dengan Kami!</span>
+      <div class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+    </a>
+    
   </body>
 </html>

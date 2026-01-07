@@ -6,16 +6,16 @@
 
 /* CSS Variables - Required for navbar */
 :root {
-  --gowjuice-green: hsl(122, 39%, 49%);
-  --gowjuice-dark-green: #388e3c;
-  --gowjuice-light-green: #81c784;
-  --gowjuice-orange: #ff9800;
-  --gowjuice-red: #f44336;
-  --gowjuice-yellow: #ffc107;
+  --Gowjus-green: hsl(122, 39%, 49%);
+  --Gowjus-dark-green: #388e3c;
+  --Gowjus-light-green: #81c784;
+  --Gowjus-orange: #ff9800;
+  --Gowjus-red: #f44336;
+  --Gowjus-yellow: #ffc107;
   --text-dark: #040404;
   --text-light: #6f6f6f;
   --bg-light: #f8f9fa;
-  --gowjuice-main-bg: #fff3ea;
+  --Gowjus-main-bg: #fff3ea;
   --bg-natural: #f1f8e9;
 }
 
@@ -32,12 +32,12 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
-.text-gowjuice-green {
-  color: var(--gowjuice-green);
+.text-Gowjus-green {
+  color: var(--Gowjus-green);
 }
 
-.text-gowjuice-yellow {
-  color: var(--gowjuice-yellow);
+.text-Gowjus-yellow {
+  color: var(--Gowjus-yellow);
 }
 
 /* Navigation */
@@ -64,33 +64,33 @@
 .navbar-nav > li:nth-child(1) {
   background: linear-gradient(
     135deg,
-    var(--gowjuice-green),
-    var(--gowjuice-light-green)
+    var(--Gowjus-green),
+    var(--Gowjus-light-green)
   ) !important;
-  border: 2px solid var(--gowjuice-green);
+  border: 2px solid var(--Gowjus-green);
 }
 
 .navbar-nav > li:nth-child(2) {
   background: linear-gradient(
     135deg,
-    var(--gowjuice-orange),
+    var(--Gowjus-orange),
     #ffb74d
   ) !important;
-  border: 2px solid var(--gowjuice-orange);
+  border: 2px solid var(--Gowjus-orange);
 }
 
 .navbar-nav > li:nth-child(3) {
-  background: linear-gradient(135deg, var(--gowjuice-red), #ef5350) !important;
-  border: 2px solid var(--gowjuice-red);
+  background: linear-gradient(135deg, var(--Gowjus-red), #ef5350) !important;
+  border: 2px solid var(--Gowjus-red);
 }
 
 .navbar-nav > li:nth-child(4) {
   background: linear-gradient(
     135deg,
-    var(--gowjuice-yellow),
+    var(--Gowjus-yellow),
     #ffd54f
   ) !important;
-  border: 2px solid var(--gowjuice-yellow);
+  border: 2px solid var(--Gowjus-yellow);
 }
 
 /* Hover effects for each card */
@@ -142,7 +142,7 @@
 }
 
 .navbar-brand:hover {
-  color: var(--gowjuice-yellow) !important;
+  color: var(--Gowjus-yellow) !important;
 }
 
 .navbar-brand img {
@@ -269,14 +269,14 @@
 
 /* Get Started button styling */
 .btn-primary {
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   border: none;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: var(--gowjuice-dark-green);
+  background: var(--Gowjus-dark-green);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
 }

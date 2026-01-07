@@ -3,18 +3,105 @@
 /* bebas neue */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+/* WhatsApp Sticky Button */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-sticky .whatsapp-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  animation: whatsapp-pulse 2s infinite;
+}
+
+.whatsapp-sticky .whatsapp-btn i {
+  font-size: 32px;
+  color: white;
+}
+
+.whatsapp-sticky .whatsapp-text {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+  color: #128c7e;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.whatsapp-sticky:hover .whatsapp-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.whatsapp-sticky:hover .whatsapp-btn {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-sticky {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-sticky .whatsapp-btn {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .whatsapp-sticky .whatsapp-btn i {
+    font-size: 28px;
+  }
+  
+  .whatsapp-sticky .whatsapp-text {
+    display: none;
+  }
+}
+
 /* Global Styles */
 :root {
-  --gowjuice-green: hsl(122, 39%, 49%);
-  --gowjuice-dark-green: #388e3c;
-  --gowjuice-light-green: #81c784;
-  --gowjuice-orange: #ff9800;
-  --gowjuice-red: #f44336;
-  --gowjuice-yellow: #ffc107;
+  --Gowjus-green: hsl(122, 39%, 49%);
+  --Gowjus-dark-green: #388e3c;
+  --Gowjus-light-green: #81c784;
+  --Gowjus-orange: #ff9800;
+  --Gowjus-red: #f44336;
+  --Gowjus-yellow: #ffc107;
   --text-dark: #040404;
   --text-light: #6f6f6f;
   --bg-light: #f8f9fa;
-  --gowjuice-main-bg: #fff3ea;
+  --Gowjus-main-bg: #fff3ea;
   --bg-natural: #f1f8e9;
 }
 
@@ -39,12 +126,12 @@ h3 {
 .text-bebas-neue {
   font-family: "Bebas Neue", sans-serif;
 }
-.text-gowjuice-green {
-  color: var(--gowjuice-green);
+.text-Gowjus-green {
+  color: var(--Gowjus-green);
 }
 
-.text-gowjuice-yellow {
-  color: var(--gowjuice-yellow);
+.text-Gowjus-yellow {
+  color: var(--Gowjus-yellow);
 }
 
 .caption-jumbotron-wrapper {
@@ -70,24 +157,24 @@ h3 {
   background-color: black;
   /* animation: float 10s linear infinite; */
 }
-.gowjuice-reset * {
+.Gowjus-reset * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.gowjuice-wrapper {
+.Gowjus-wrapper {
   font-family: "Arial", sans-serif;
   padding: 40px 20px;
   min-height: 100vh;
 }
 
-.gowjuice-container {
+.Gowjus-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.gowjuice-title {
+.Gowjus-title {
   text-align: center;
   color: #2d5016;
   font-size: 4em;
@@ -95,21 +182,21 @@ h3 {
   font-weight: bold;
 }
 
-.gowjuice-subtitle {
+.Gowjus-subtitle {
   text-align: center;
   color: #5a7c3e;
   font-size: 1.1em;
   margin-bottom: 50px;
 }
 
-.gowjuice-products-grid {
+.Gowjus-products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 40px;
 }
 
-.gowjuice-product-card {
+.Gowjus-product-card {
   background: white;
   border-radius: 25px;
   padding: 30px;
@@ -120,7 +207,7 @@ h3 {
   overflow: hidden;
 }
 
-.gowjuice-product-card::before {
+.Gowjus-product-card::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -138,27 +225,27 @@ h3 {
   z-index: 0;
 }
 
-.gowjuice-product-card:hover {
+.Gowjus-product-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-.gowjuice-product-card:hover::before {
+.Gowjus-product-card:hover::before {
   opacity: 1;
 }
 
-.gowjuice-product-image {
+.Gowjus-product-image {
   width: 100%;
   height: 280px;
   object-fit: contain;
   border-radius: 15px;
   margin-bottom: 15px;
-  animation: gowjuice-float 3s ease-in-out infinite;
+  animation: Gowjus-float 3s ease-in-out infinite;
   position: relative;
   z-index: 1;
 }
 
-@keyframes gowjuice-float {
+@keyframes Gowjus-float {
   0%,
   100% {
     transform: translateY(0px);
@@ -168,35 +255,35 @@ h3 {
   }
 }
 
-.gowjuice-product-card:nth-child(1) {
+.Gowjus-product-card:nth-child(1) {
   border-top: 5px solid #ff6b6b;
 }
-.gowjuice-product-card:nth-child(2) {
+.Gowjus-product-card:nth-child(2) {
   border-top: 5px solid #4ecdc4;
 }
-.gowjuice-product-card:nth-child(3) {
+.Gowjus-product-card:nth-child(3) {
   border-top: 5px solid #ffe66d;
 }
-.gowjuice-product-card:nth-child(4) {
+.Gowjus-product-card:nth-child(4) {
   border-top: 5px solid #a8e6cf;
 }
-.gowjuice-product-card:nth-child(5) {
+.Gowjus-product-card:nth-child(5) {
   border-top: 5px solid #ff8b94;
 }
-.gowjuice-product-card:nth-child(6) {
+.Gowjus-product-card:nth-child(6) {
   border-top: 5px solid #c7ceea;
 }
-.gowjuice-product-card:nth-child(7) {
+.Gowjus-product-card:nth-child(7) {
   border-top: 5px solid #ffd93d;
 }
-.gowjuice-product-card:nth-child(8) {
+.Gowjus-product-card:nth-child(8) {
   border-top: 5px solid #6bcf7f;
 }
-.gowjuice-product-card:nth-child(9) {
+.Gowjus-product-card:nth-child(9) {
   border-top: 5px solid #ff9a76;
 }
 
-.gowjuice-product-name {
+.Gowjus-product-name {
   font-size: 1.5em;
   color: #2d5016;
   margin-bottom: 10px;
@@ -205,7 +292,7 @@ h3 {
   z-index: 1;
 }
 
-.gowjuice-product-description {
+.Gowjus-product-description {
   color: #666;
   font-size: 0.95em;
   margin-bottom: 20px;
@@ -214,7 +301,7 @@ h3 {
   z-index: 1;
 }
 
-.gowjuice-order-btn {
+.Gowjus-order-btn {
   background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
   color: white;
   border: none;
@@ -232,7 +319,7 @@ h3 {
   z-index: 2;
 }
 
-.gowjuice-order-btn:hover {
+.Gowjus-order-btn:hover {
   background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
@@ -250,50 +337,50 @@ h3 {
   .hero-bg-icons {
     overflow-x: hidden;
   }
-  .gowjuice-subtitle {
+  .Gowjus-subtitle {
     font-size: 0.8rem;
   }
-  .gowjuice-products-grid {
+  .Gowjus-products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
-  .gowjuice-title {
+  .Gowjus-title {
     font-size: 2em;
   }
 
-  .gowjuice-product-card {
+  .Gowjus-product-card {
     padding: 20px;
   }
 
-  .gowjuice-product-image {
+  .Gowjus-product-image {
     height: 240px;
   }
 
-  .gowjuice-product-name {
+  .Gowjus-product-name {
     font-size: 1.3em;
   }
 
-  .gowjuice-product-description {
+  .Gowjus-product-description {
     font-size: 0.9em;
   }
 }
 
 @media (max-width: 480px) {
-  .gowjuice-products-grid {
+  .Gowjus-products-grid {
     gap: 15px;
     grid-template-columns: 1fr;
   }
 
-  .gowjuice-product-card {
+  .Gowjus-product-card {
     padding: 15px;
   }
 
-  .gowjuice-product-image {
+  .Gowjus-product-image {
     height: 200px;
   }
 
-  .gowjuice-order-btn {
+  .Gowjus-order-btn {
     padding: 10px 20px;
     font-size: 0.9em;
   }
@@ -367,13 +454,13 @@ h3 {
 }
 
 #motto .motto-card:nth-child(1) .bg-motto-card {
-  background-color: var(--gowjuice-green);
+  background-color: var(--Gowjus-green);
 }
 #motto .motto-card:nth-child(2) .bg-motto-card {
-  background-color: var(--gowjuice-yellow);
+  background-color: var(--Gowjus-yellow);
 }
 #motto .motto-card:nth-child(3) .bg-motto-card {
-  background-color: var(--gowjuice-red);
+  background-color: var(--Gowjus-red);
 }
 
 .motto-card::after {
@@ -387,7 +474,7 @@ h3 {
   border: 2px solid black;
   transition: all ease-in-out 0.3s;
   position: absolute;
-  background-color: var(--gowjuice-orange);
+  background-color: var(--Gowjus-orange);
 }
 
 .motto-card::before {
@@ -416,7 +503,7 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   overflow-x: hidden;
-  background-color: var(--gowjuice-main-bg);
+  background-color: var(--Gowjus-main-bg);
 }
 
 .hero-content-right {
@@ -461,7 +548,7 @@ body {
   left: 0;
   width: 100px;
   height: 4px;
-  background-color: var(--gowjuice-green);
+  background-color: var(--Gowjus-green);
   border-radius: 2px;
 }
 
@@ -582,7 +669,7 @@ body {
 .price {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
 }
 
 /* Footer */
@@ -591,7 +678,7 @@ footer {
 }
 
 footer h5 {
-  color: var(--gowjuice-yellow);
+  color: var(--Gowjus-yellow);
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -606,7 +693,7 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--gowjuice-yellow) !important;
+  color: var(--Gowjus-yellow) !important;
   transform: translateX(5px);
 }
 
@@ -620,7 +707,7 @@ footer a:hover {
   font-size: x-large;
   color: white;
   position: relative !important;
-  background-color: var(--gowjuice-dark-green);
+  background-color: var(--Gowjus-dark-green);
   transition: all ease-in-out 0.2s;
   border: 2px solid black;
 }
@@ -635,19 +722,19 @@ footer a:hover {
   border: 2px solid black;
   transition: all ease-in-out 0.2s;
   border-radius: 0.375rem;
-  background-color: var(--gowjuice-yellow);
+  background-color: var(--Gowjus-yellow);
   z-index: -2;
 }
 
 .btn-gradient:hover {
-  background-color: var(--gowjuice-dark-green);
+  background-color: var(--Gowjus-dark-green);
   border: 2px solid black;
   color: white;
 }
 
 .btn.btn-gradient:active,
 .btn.btn-gradient:focus {
-  background: var(--gowjuice-dark-green) !important;
+  background: var(--Gowjus-dark-green) !important;
   color: #fff !important;
   box-shadow: none !important; /* hilangkan efek focus bootstrap */
   outline: none !important;
@@ -662,7 +749,7 @@ footer a:hover {
   left: 0;
   border: 2px solid black;
   border-radius: 0.375rem;
-  background-color: var(--gowjuice-orange);
+  background-color: var(--Gowjus-orange);
   z-index: -1;
 }
 
@@ -747,7 +834,7 @@ footer a:hover {
   font-size: 3.5rem;
   line-height: 0.9;
   width: 70%;
-  color: var(--gowjuice-light-green);
+  color: var(--Gowjus-light-green);
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -929,7 +1016,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -964,31 +1051,31 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gowjuice-dark-green);
+  background: var(--Gowjus-dark-green);
 }
 
 /* Menu Navigation Pills */
 .nav-pills .nav-link {
   color: var(--text-dark);
   background: white;
-  border: 2px solid var(--gowjuice-green);
+  border: 2px solid var(--Gowjus-green);
   margin: 0 5px;
   border-radius: 25px;
   transition: all 0.3s ease;
 }
 
 .nav-pills .nav-link.active {
-  background-color: var(--gowjuice-green);
+  background-color: var(--Gowjus-green);
   color: white;
 }
 
 .nav-pills .nav-link:hover {
-  background-color: var(--gowjuice-light-green);
+  background-color: var(--Gowjus-light-green);
   color: white;
   transform: translateY(-2px);
 }
@@ -1098,8 +1185,8 @@ html {
   bottom: 0;
   background: linear-gradient(
     135deg,
-    var(--gowjuice-green) 0%,
-    var(--gowjuice-light-green) 100%
+    var(--Gowjus-green) 0%,
+    var(--Gowjus-light-green) 100%
   );
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -1109,7 +1196,7 @@ html {
 
 .product-card:hover {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-  border-color: var(--gowjuice-green);
+  border-color: var(--Gowjus-green);
 }
 
 .product-card:hover::before {
@@ -1159,7 +1246,7 @@ html {
 }
 
 .like-btn:hover {
-  background: var(--gowjuice-red);
+  background: var(--Gowjus-red);
   color: white;
 }
 
@@ -1193,7 +1280,7 @@ html {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0;
-  color: var(--gowjuice-yellow);
+  color: var(--Gowjus-yellow);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -1205,7 +1292,7 @@ html {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   border: none;
   color: white;
   display: flex;
@@ -1217,7 +1304,7 @@ html {
 }
 
 .action-btn:hover {
-  background: var(--gowjuice-dark-green);
+  background: var(--Gowjus-dark-green);
   box-shadow: 0 6px 20px rgba(56, 142, 60, 0.4);
 }
 
@@ -1229,7 +1316,7 @@ html {
 /* Swiper Navigation */
 .product-swiper .swiper-button-next,
 .product-swiper .swiper-button-prev {
-  color: var(--gowjuice-green);
+  color: var(--Gowjus-green);
   background: white;
   width: 50px;
   height: 50px;
@@ -1242,7 +1329,7 @@ html {
 
 .product-swiper .swiper-button-next:hover,
 .product-swiper .swiper-button-prev:hover {
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   color: white;
 }
 
@@ -1267,7 +1354,7 @@ html {
 }
 
 .product-swiper .swiper-pagination-bullet {
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
   opacity: 0.3;
   width: 12px;
   height: 12px;
@@ -1278,7 +1365,7 @@ html {
 .product-swiper .swiper-pagination-bullet-active {
   opacity: 1;
   transform: scale(1.2);
-  background: var(--gowjuice-green);
+  background: var(--Gowjus-green);
 }
 
 /* Grid Design Styles */
@@ -1408,13 +1495,13 @@ html {
 .innovation-block {
   background: linear-gradient(
     135deg,
-    var(--gowjuice-green),
-    var(--gowjuice-light-green)
+    var(--Gowjus-green),
+    var(--Gowjus-light-green)
   );
 }
 
 .ideation-block {
-  background: var(--gowjuice-dark-green);
+  background: var(--Gowjus-dark-green);
   display: flex;
   align-items: center;
   justify-content: center;
